@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "desmond"
+    }
+  },
+  "defaultProject": "desmond",
+  "cli": {
+    "analytics": "6e4c9c66-9b4e-4674-b5d8-f277574fd1c3"
+  }
 }
