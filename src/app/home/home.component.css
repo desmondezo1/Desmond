@@ -35,6 +35,11 @@ h1::before {
   z-index: 2;
   line-height: 140px;
   position: absolute;
+  animation-name: animate-pseudo;
+  animation-duration: 1.5s;
+  animation-delay: 2300ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
 }
 
 h2 {
@@ -43,6 +48,14 @@ h2 {
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 42px;
-
   color: #000000;
+}
+
+@keyframes animate-pseudo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
