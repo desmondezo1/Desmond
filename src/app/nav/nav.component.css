@@ -1,0 +1,92 @@
+nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  position: absolute;
+}
+
+nav img.logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+nav img.email {
+  height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 13px 24px -3px rgba(0, 0, 0, 0.25);
+}
+
+/* social icons side nav */
+.social-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0 10px 10px 0;
+  top: 25%;
+  left: 0;
+  padding: 20px 10px;
+  width: 50px;
+  box-shadow: 0 0 17px -5px #c4c4c4, 0 0 17px -12px #c4c4c4;
+  height: 40vh;
+  position: absolute;
+}
+
+.github,
+.codepen,
+.dribbble {
+  height: 20px;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+
+  /* padding: 10px 10px 20px 10px;
+  background-color: red; */
+}
+
+.bottom-nav-links {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 41px;
+  color: #b6d1ff;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s ease;
+}
+
+a.bottom-nav-links::before {
+  content: "";
+  height: 60px;
+  width: 15px;
+  transform: translateX(-150%) rotate(45deg);
+  transform-origin: top;
+  transition: transform 0.5s ease;
+  position: absolute;
+  background: #ffffff;
+  border: 5px solid #ffffff;
+
+  border-radius: 2px;
+}
+
+/* hover bottom nav links  */
+
+.bottom-nav:hover a.bottom-nav-links {
+  color: #015af4;
+}
+a.bottom-nav-links:hover::before {
+  transform: translateX(550%) rotate(45deg);
+}
