@@ -1,1 +1,26 @@
-<p>portfolio works!</p>
+<section class="portfolio">
+    <ul class="toggle-tabs">
+        <li (click)="web()"> <a [class.active]="switch =='web' ">WEB</a></li>
+        <li (click)="design()"> <a [class.active]="switch == 'design'" >DESIGN</a></li>
+    </ul>
+
+    <div class="grid-group" [ngSwitch]="switch">
+        <!-- 
+        <div class="work-thumb"></div>
+        <div class="work-thumb"></div>
+        <div class="work-thumb"></div>
+        <div class="work-thumb"></div>
+        <div class="work-thumb"></div>
+        <div class="work-thumb"></div> 
+        -->
+        
+        <app-web-portfolio *ngSwitchCase="'web'"></app-web-portfolio>
+        <app-design-portfolio *ngSwitchCase="'design'"></app-design-portfolio>
+            
+    </div>
+    <div class="see-more">
+        <a href=""><p>See More</p>
+        <img src="../../assets/img/arrow.svg" ></a>
+    </div>
+      
+</section>

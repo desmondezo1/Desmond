@@ -5,11 +5,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  public switch = "web"
+web(){
+  this.switch = "web"
+}
+design(){
+  this.switch = "design"
+}
+  constructor() {
+    
+   }
 
-  constructor() { }
+
+
 
   ngOnInit(): void {
-    console.log("we are in portfolio");
+    
   }
 
 }

@@ -27,7 +27,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/animejs/lib/anime.es.js"
+              "node_modules/animejs/lib/anime.es.js",
+              "node_modules/fullpage.js/dist/fullpage.min.js"
             ]
           },
           "configurations": {
