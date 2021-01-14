@@ -20,7 +20,7 @@ constructor() {
       });
 
       tl.add({
-        targets: [".hi",".desmond",".creative",".designer"],
+        targets: [".hi",".desmond",".creative",".designer","h2"],
      opacity: 0
       }).add({
      targets: ".hi",
@@ -30,10 +30,10 @@ constructor() {
       opacity: 1
     }).add({
       delay: 1500,
-      targets:".creative",
+      targets:[".creative","h2"],
       opacity: 1
     }).add({
-      targets:".designer",
+      targets:[".designer","h2"],
       opacity: 1
     })
 

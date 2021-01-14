@@ -15,6 +15,7 @@
   width: 70%;
   margin: auto;
   display: grid;
+  grid-column-gap: 20px;
   justify-content: space-evenly;
   grid-template:
     ". about . image ."
@@ -48,6 +49,7 @@
 
 .skills ul li {
   margin: 5px 0;
+  font-family: 'Kalam', cursive;
   list-style-image: url("../../assets/img/t.svg");
   list-style-position: outside;
 }
