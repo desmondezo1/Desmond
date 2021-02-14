@@ -1,5 +1,5 @@
 
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import fullpage from '../../../node_modules/fullpage.js/dist/fullpage.min.js';
 
 @Component({
@@ -7,15 +7,10 @@ import fullpage from '../../../node_modules/fullpage.js/dist/fullpage.min.js';
   templateUrl: './aboutme.component.html',
   styleUrls: ['./aboutme.component.css']
 })
-export class AboutmeComponent implements AfterViewInit {
+export class AboutmeComponent {
 
   constructor() { }
 
-      
 
-          ngAfterViewInit(): void{
-
-       
-          }
 
 }

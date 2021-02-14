@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoadScreenComponent } from './load-screen/load-screen.component';
@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { WebPortfolioComponent } from './portfolio/web-portfolio/web-portfolio.component';
 import { DesignPortfolioComponent } from './portfolio/design-portfolio/design-portfolio.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DesignPortfolioComponent } from './portfolio/design-portfolio/design-po
     HomeComponent,
     NavComponent,
     WebPortfolioComponent,
-    DesignPortfolioComponent
+    DesignPortfolioComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

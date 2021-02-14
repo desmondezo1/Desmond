@@ -5,22 +5,22 @@
     </ul>
 
     <div class="grid-group" [ngSwitch]="switch">
-        <!-- 
+        <!--
         <div class="work-thumb"></div>
         <div class="work-thumb"></div>
         <div class="work-thumb"></div>
         <div class="work-thumb"></div>
         <div class="work-thumb"></div>
-        <div class="work-thumb"></div> 
+        <div class="work-thumb"></div>
         -->
-        
+
         <app-web-portfolio *ngSwitchCase="'web'"></app-web-portfolio>
         <app-design-portfolio *ngSwitchCase="'design'"></app-design-portfolio>
-            
+
     </div>
     <div class="see-more">
-        <a href=""><p>See More</p>
+        <a [routerLink]="['/projects']" ><p>See More</p>
         <img src="../../assets/img/arrow.svg" ></a>
     </div>
-      
+
 </section>

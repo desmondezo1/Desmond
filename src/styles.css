@@ -8,6 +8,7 @@
 html,
 body {
   height: 100%;
+  cursor: url('assets/img/cursor.svg') , url('assets/img/cursor.cur'), auto;
 }
 
 ::-webkit-scrollbar {

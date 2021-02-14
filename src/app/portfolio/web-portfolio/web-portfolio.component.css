@@ -12,9 +12,36 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
+
 .work-thumb {
   box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.25),
     0px 4px 29px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   background: red;
+
+}
+
+.work-thumb:hover {
+  box-shadow: 0px 4px 20px -1px rgb(0 0 0 / 25%), 0px 4px 29px 4px rgb(0 0 0 / 25%);
+
+}
+
+/* ============================ */
+
+.work-thumb img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ----- media queries ----- */
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-height: 1023px) {
+
+  .work-thumb {
+    max-height:213.29px;
+    /* max-width: 225.59px; */
+  }
+
 }

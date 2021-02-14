@@ -1,13 +1,1 @@
-.cursor{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 3px solid blue;
-  position: absolute;
-  z-index: 999999;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
-:host{
-  cursor: url('../assets/img/cursor.svg') ,url('../assets/img/cursor.cur') pointer;
-}
+
