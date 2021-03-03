@@ -176,3 +176,40 @@ a.bottom-nav-links:hover::before {
     transform: translateY(100px);
   }
 }
+
+
+/* tablet mode  */
+
+@media screen and (min-width: 426px) and (max-width: 1024px){
+}
+  /* large phone  */
+  @media screen and (max-width: 425px){
+    .bottom-nav-links{
+      font-size: 0.8rem;
+    }
+
+    .social-icons{
+      display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 0 10px 10px 0;
+    top: 66%;
+    left: 37px;
+    margin-top: 15px;
+    padding: 20px 10px;
+    width: 50px;
+    box-shadow: 0 0 0 0 black;
+    height: 5vh;
+    width: 40vw;
+    position: fixed;
+    z-index: 5;
+    }
+
+    @keyframes social-icons {
+      to {
+        transform: translateX(-200px);
+      }
+    }
+  }

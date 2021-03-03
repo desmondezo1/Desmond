@@ -1,4 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 //import anime from 'node_modules/animejs/lib/anime.es.js';
 @Component({
   selector: 'app-nav',
@@ -6,8 +8,23 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements AfterViewInit {
+  loc
+  constructor(
+    public router : Router
+    ) {
 
-  constructor() { }
+      // check the current route real time
+        this.router.events.pipe(
+        filter((event:any) => event instanceof NavigationEnd)
+      ).subscribe(x =>{
+        this.loc = x.url;
+        console.log(x)
+      } )
+
+    }
+
+
+
 
 
   ngAfterViewInit(): void{
@@ -32,7 +49,7 @@ export class NavComponent implements AfterViewInit {
   //       translateY: -400
   //     })
 
-      
+
 
 
   }

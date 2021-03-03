@@ -37,7 +37,7 @@
 
 .grid-group .tools ul li{
   font-weight: 400;
-  font-size: 0.93rem;
+  font-size: 0.83rem;
   color: rgb(196, 196, 196);
   font-family: "Open Sans", sans-serif;
   list-style: none;
@@ -91,7 +91,7 @@
 
 /* ----- media queries ----- */
 
-/* Tablet */
+/* laptop */
 @media screen and (min-width: 768px) and (max-height: 1023px) {
 
   .work-thumb {
@@ -99,4 +99,42 @@
     /* max-width: 225.59px; */
   }
 
+}
+
+
+/* Tablet */
+@media screen and (min-width: 426px) and (max-width: 767px){
+  .grid-group{
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(auto-fit, 200px);
+    grid-row-gap: 20px;
+  }
+}
+
+/* large phone  */
+@media screen and (min-width: 321px) and (max-width: 425px){
+  .grid-group{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(6, calc(99% - 40px));
+    grid-template-rows: minmax(150px, 0.92fr);
+  }
+
+
+}
+
+  /* small screen  */
+  @media screen and (max-width: 320px){
+
+    .grid-group{
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: repeat(6, calc(99% - 40px));
+      grid-template-rows: minmax(150px, 0.92fr);
+    }
 }
