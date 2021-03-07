@@ -188,6 +188,11 @@ a.bottom-nav-links:hover::before {
       font-size: 0.8rem;
     }
 
+
+    nav img.email {
+      height: 25px;
+    }
+
     .social-icons{
       display: flex;
     align-items: center;
