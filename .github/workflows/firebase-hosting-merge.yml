@@ -18,5 +18,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DESMOND_E78CF }}'
           channelId: live
           projectId: desmond-e78cf
-        env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
